@@ -3,24 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 100%;
     background-color: black;
     color: silver;
 }
+
 header {
     display: flex;
     align-items: center;
     border-bottom: 3px ridge silver;
     margin-bottom: 2em;
 }
+
 header img {
     padding: 1em;
 }
+
 header h2 {
     font-size: 300%;
 }
+
 header h3 {
     font-size: 200%;
 }
@@ -31,6 +36,60 @@ header h3 {
     align-items: center;
 }
 
+.imagecarousel {
+    position: relative;
+}
+
+.image {
+    display: none;
+}
+
+.image:first-of-type {
+    display: block;
+}
+
+.image img {
+    border-radius: 10px;
+}
+
+.prev,
+.next {
+    font-size: 300%;
+    position: absolute;
+    color: white;
+     top: 50%;
+     transform: translateY(-50%);
+}
+
+.prev {
+    left: 15px;
+}
+
+.next {
+    right: 15px;
+}
+
+.prev:hover,
+.next:hover {
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    cursor: grab;
+}
+
+.dots {
+    display: flex;
+    color: white;
+    gap: 10px;
+    margin: 1em;
+}
+
+.dot {
+    background-color: aliceblue;
+    padding: 1em;
+    border-radius: 20px;
+    cursor: pointer;
+}
 
 footer {
     padding: 2em 0;
