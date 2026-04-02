@@ -31,12 +31,12 @@
                 <div class="image fadeout"><img src="images/frog_11.jpg" alt=""></div>
                 <div class="image fadeout"><img src="images/frog_12.jpg" alt=""></div>
                 <div class="image fadeout"><img src="images/frog_13.jpg" alt=""></div>
-                <div class="prev"><i class="fa-solid fa-caret-left"></i></div>
-                <div class="next"><i class="fa-solid fa-caret-right"></i></div>
+                <div class="prev"><i class="fa-solid fa-caret-left" onclick="showImage(-1)"></i></div>
+                <div class="next"><i class="fa-solid fa-caret-right" onclick="showImage(1)"></i></div>
             </div>
         </div>
         <div class="dots">
-            <span class="dot"></span>
+            <span class="dot active"></span>
             <span class="dot"></span>
             <span class="dot"></span>
             <span class="dot"></span>
@@ -52,7 +52,7 @@
         </div>
     </main>
     <footer>
-        <p>&copy;<span id="copyright"></span> Michael Roberts Productions</p>
+        <p>&copy;<span id="copyright"></span> Kayla Rivera Productions</p>
     </footer>
 </body>
 </html>
